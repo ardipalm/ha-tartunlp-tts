@@ -1,0 +1,12 @@
+{
+  "domain": "tartunlp_tts",
+  "name": "TartuNLP Neurokõne",
+  "codeowners": ["@ardipalm"],
+  "config_flow": true,
+  "documentation": "https://github.com/ardipalm/ha-tartunlp-tts",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/ardipalm/ha-tartunlp-tts/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

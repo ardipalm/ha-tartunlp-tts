@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TartuNLP Neurokõne",
+        "description": "Estonian text-to-speech using the free University of Tartu API (api.tartunlp.ai). Text you synthesise is sent to their servers. Pick the voice in your Assist pipeline."
+      }
+    },
+    "abort": {
+      "already_configured": "Already configured."
+    }
+  }
+}
