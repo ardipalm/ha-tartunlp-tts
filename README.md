@@ -9,7 +9,7 @@ Works as a regular TTS engine: pick it in an **Assist pipeline**, or use it with
 
 > This is an unofficial community integration. It is not affiliated with or endorsed by
 > the University of Tartu. Text you synthesise is sent to `api.tartunlp.ai`; see their
-> [privacy terms](https://www.tartunlp.ai/andmekaitsetingimused). The API is a free public
+> [data protection policy](https://www.tartunlp.ai/data-protection-policy). The API is a free public
 > service with no uptime guarantee.
 
 ## Voices
@@ -61,7 +61,8 @@ kausta `/config/custom_components/`, taaskäivita HA ja lisa integratsioon
 **TartuNLP Neurokõne**. Hääle valid Assist pipeline'i seadetes.
 
 Tegemist on mitteametliku integratsiooniga, mis ei ole Tartu Ülikooliga seotud.
-Etteloetav tekst saadetakse aadressile `api.tartunlp.ai`.
+Etteloetav tekst saadetakse aadressile `api.tartunlp.ai`
+([andmekaitsetingimused](https://www.tartunlp.ai/data-protection-policy)).
 
 ## License
 
