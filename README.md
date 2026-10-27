@@ -1,6 +1,6 @@
 # TartuNLP Neurokõne TTS for Home Assistant
 
-Estonian (and Võro) text-to-speech for Home Assistant, using the free public
+Estonian text-to-speech for Home Assistant, using the free public
 [TartuNLP text-to-speech API](https://api.tartunlp.ai/text-to-speech/docs) by the
 University of Tartu NLP research group.
 
@@ -16,10 +16,16 @@ Works as a regular TTS engine: pick it in an **Assist pipeline**, or use it with
 
 | Language | Voices |
 |---|---|
-| Estonian (`et`) | mari (default), albert, indrek, kalev, kylli, lee, liivika, luukas, meelis, peeter, tambet, vesta |
-| Võro (`vro`) | sulev, hella |
+| Estonian (`et`) | mari (default), albert, vesta, kalev, meelis |
+
+These are the voices TartuNLP permits for use in third-party integrations. The API
+config lists more voices, but their usage licence has changed, so this integration
+does not offer them.
 
 Options: `voice`, `speed` (0.5–2.0, default 1).
+
+Keep messages short (a few sentences). TartuNLP recommends splitting large amounts of
+text into smaller requests; very long text may time out.
 
 ## Installation
 
@@ -58,7 +64,8 @@ data:
 Eestikeelne kõnesüntees Home Assistantile Tartu Ülikooli tasuta TartuNLP API kaudu.
 Paigalda HACS-i kaudu (custom repository) või kopeeri `custom_components/tartunlp_tts`
 kausta `/config/custom_components/`, taaskäivita HA ja lisa integratsioon
-**TartuNLP Neurokõne**. Hääle valid Assist pipeline'i seadetes.
+**TartuNLP Neurokõne**. Hääle valid Assist pipeline'i seadetes: Mari, Albert, Vesta,
+Kalev või Meelis (TartuNLP lubab kolmandate osapoolte rakendustes kasutada ainult neid).
 
 Tegemist on mitteametliku integratsiooniga, mis ei ole Tartu Ülikooliga seotud.
 Etteloetav tekst saadetakse aadressile `api.tartunlp.ai`

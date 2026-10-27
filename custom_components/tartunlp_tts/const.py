@@ -3,21 +3,8 @@
 DOMAIN = "tartunlp_tts"
 API_URL = "https://api.tartunlp.ai/text-to-speech/v2"
 
-# From GET https://api.tartunlp.ai/text-to-speech/v2 (2026-10-07)
+# Only these voices may be used by third-party integrations; the usage licence of
+# the other voices in the API config has changed (TartuNLP, 2026-10).
 VOICES: dict[str, list[str]] = {
-    "et": [
-        "mari",
-        "albert",
-        "indrek",
-        "kalev",
-        "kylli",
-        "lee",
-        "liivika",
-        "luukas",
-        "meelis",
-        "peeter",
-        "tambet",
-        "vesta",
-    ],
-    "vro": ["sulev", "hella"],
+    "et": ["mari", "albert", "vesta", "kalev", "meelis"],
 }
